@@ -99,7 +99,6 @@ a {
     flex-direction: column;
     justify-content: center;
     font-size: min(1.4rem, 100%);
-    padding: 100px 0;
     overflow: auto;
 }
 
@@ -204,6 +203,7 @@ label {
     }
 
     .main {
+        padding: 100px 0;
         height: auto;
         overflow: visible;
     }
