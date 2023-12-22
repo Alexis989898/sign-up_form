@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up</title>
+</head>
+
+<body>
+    <div class="side-section-wrapper">
+        <div class="side-section-bg"></div>
+        <div class="side-section">
+            <div class="side-header"><img class="odin-icon" src="imgs/odin-lined.png" alt="">Sign-up now!</div>
+            <div class="side-footer">Photo by <a target="_blank" href="https://unsplash.com/pt-br/@haliewestphoto">Halie West</a> on
+                <a target="_blank" href="https://unsplash.com/pt-br/">Unsplash</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-header">Register to our amazing fake website and gain amazing things! Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Dolorum voluptatibus repellendus...
+        </div>
+        <div class="form-wrapper">
+            <span>Let's do this!</span>
+            <form id="register-form" action="/index.html" method="get">
+                <div class="form-control-wrapper">
+                    <label for="form-firstName">FIRST NAME</label>
+                    <input class="form-input" id="form-firstName" type="text" required>
+                </div>
+                <div class="form-control-wrapper">
+                    <label for="form-lastName">LAST NAME</label>
+                    <input class="form-input" id="form-lastName" type="text" required>
+                </div>
+                <div class="form-control-wrapper">
+                    <label for="form-email">EMAIL</label>
+                    <input placeholder="example@gmail.com" class="form-input" id="form-email" type="email" required>
+                </div>
+                <div class="form-control-wrapper">
+                    <label for="form-phone">PHONE NUMBER (Optional)</label>
+                    <input min="10" oninput="setCustomValidity('')"
+                        oninvalid='this.setCustomValidity("Has to contain at least 10 digits")' pattern="^\d{10,}$"
+                        class="form-input" id="form-phone" type="tel">
+                </div>
+                <div class="form-control-wrapper">
+                    <label for="form-password">PASSWORD</label>
+                    <input class="form-input" id="form-password" type="password" required>
+                </div>
+                <div class="form-control-wrapper">
+                    <label for="form-confirmPassword">CONFIRM PASSWORD</label>
+                    <input class="form-input" id="form-confirmPassword" type="password" required>
+                </div>
+            </form>
+        </div>
+
+        <div class="register-wrapper">
+            <button type="submit" form="register-form" class="btn-register">Create Account</button>
+            <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
